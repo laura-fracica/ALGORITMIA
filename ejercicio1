@@ -1,0 +1,24 @@
+Proceso IVA
+	Definir precioBase, porcentajeDescuento Como Real;
+	Definir valorDescuento, subtotal, valorIva, total Como Real;
+	
+	Escribir "Escriba el precio base del producto en pesos: ";
+	Leer precioBase;
+	Escribir "Escriba el porcentaje de descuento: ";
+	Leer  porcentajeDescuento;
+	
+	valorDescuento <- precioBase * porcentajeDescuento / 100;
+	subtotal <- precioBase - valorDescuento;
+	valorIva <- (subtotal * 19) / 100; 
+	total <- subtotal + valorIva;
+	
+	Escribir "---------------------------------------";
+	Escribir "PRECIO FINAL CON DESCUENTO + IVA";
+	Escribir "---------------------------------------";
+	Escribir "";
+	Escribir "Valor del descuento		:", valorDescuento;
+	Escribir "Subtotal ya con descuento	:",subtotal;
+	Escribir "Valor del IVA				:", valorIva;
+	Escribir "Total a pagar				:", total;
+	
+FinProceso
