@@ -1,0 +1,19 @@
+Algoritmo SemaforoInventario
+    Definir unidades Como Entero;
+    Escribir "Ingrese la cantidad de unidades en inventario:";
+    Leer unidades;
+    
+    Si unidades < 0 Entonces
+        Escribir "? Error: La cantidad no puede ser negativa.";
+    Sino
+        Si unidades = 0 Entonces
+            Escribir "Rojo: Agotado.";
+        Sino
+            Si unidades <= 10 Entonces
+                Escribir "Amarillo: Stock bajo, hay que pedir unidades.";
+            Sino
+                Escribir "Verde: Stock suficiente, todo bien.";
+            FinSi;
+        FinSi;
+    FinSi;
+FinAlgoritmo
