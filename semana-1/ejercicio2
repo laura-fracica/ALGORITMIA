@@ -1,0 +1,27 @@
+Proceso porcentajeCompra
+	Definir  valorCompra, porcentaje, descuento, total Como Real;
+	
+	Escribir "Ingrese el valor de la compra: ";
+	Leer valorCompra;
+	
+	si valorCompra > 100000 entonces 
+		porcentaje <- 10;
+	SiNo
+		SI valorCompra <= 100000 Entonces
+			porcentaje <- 0;
+		FinSi
+	FinSi
+	
+	descuento <- (valorCompra * porcentaje) / 100;
+	total <- valorCompra - descuento;
+	
+	Escribir "---------------------------------------";
+	Escribir "Descuento por monto de compra";
+	Escribir "---------------------------------------";
+	Escribir "";
+	Escribir "Valor de la compra		:", valorCompra;
+	Escribir "Porcentaje de descuento	:", porcentaje;
+	Escribir "Valor del descuento		:", descuento;
+	Escribir "Total a pagar				:", total;
+	
+FinProceso

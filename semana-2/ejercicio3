@@ -1,0 +1,27 @@
+Proceso notaDefinitiva
+	definir nota, desempeno Como Real;
+	
+	Escribir "Escriba la nota del estudiante: ";
+	Leer nota;
+	
+	si nota < 3.0 Entonces
+		Escribir "El desempeno es bajo";
+		Escribir "La nota fue: ", nota;
+	SiNo
+		SI NOTA >= 3.0 Y nota <= 3.9 Entonces
+			Escribir "El desempeno es basico";
+			Escribir "La nota fue: ", nota;
+		SiNo
+			SI nota >= 4.0 y nota <= 4.5 Entonces
+				Escribir "El desempeno es alto";
+				Escribir "La nota fue: ", nota;
+			SINO 
+				SI nota >= 4.6 y nota <= 5.0 Entonces
+					Escribir "El desempeno es superior";
+					Escribir "La nota fue: ", nota;
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+FinProceso

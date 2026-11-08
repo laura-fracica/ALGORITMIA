@@ -1,0 +1,11 @@
+Traza 1: Factorial con N = 4
+
+| Iteracion | i | fact (antes) | fact (despues) |
+|---|---|---|---|
+| inicio | - | - | 1 |
+| 1 | 1 | 1 | 1 |
+| 2 | 2 | 1 | 2 |
+| 3 | 3 | 2 | 6 |
+| 4 | 4 | 6 | 24 |
+
+Salida: Factorial: 24
